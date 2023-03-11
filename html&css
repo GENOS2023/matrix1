@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  
+  align-items:center;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, red, yellow);
+  
+}
+
+.cube{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  animation: animate 4s linear infinte;
+  transform: skewX(0deg);
+  /*background-image: linear-gradient(black , yellow);*/
+  margin-top: 0px;
+  transform-origin: left;
+  
+
+ 
+}
+.text{
+  transform: matrix(1, 0, 0, 0.3, 90, 10);
+  text-align: center;
+  animation-duration: 3s;
+  animation-name: text;
+  animation-iteration-count: infinite; 
+  position: absolute;
+  margin-top:0px;
+  transform-origin: bottom;
+  
+
+}
+  @keyframes text{
+    0%{  margin-top: 150px;  font-size: 40px;}
+    100%{   margin-top: -70px;  font-size: 20px;}
+  
+
+}
+
+
+}
+</style>
+</head>
+<body>
+
+  <div class="cube"> 
+    <p class=" text"> oh oh oh oh<br> oh oh oh oh<br> oh oh oh oh</p>
+  </div>
+  </div>
+
+</body>
+</html>
